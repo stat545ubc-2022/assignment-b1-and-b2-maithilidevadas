@@ -1,4 +1,6 @@
 **Assignment B1**
+
+
 **Contents**
 This repository contains the files **AssignmentB1.md**, **AssignmentB1.rmd** and **README.md**
 In this document we have learnt to create a function and document it using **roxygen2()** syntax. 
