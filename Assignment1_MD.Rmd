@@ -1,0 +1,19 @@
+---
+title: "Assignment B1"
+author: "Maithili Devadas"
+date: "2022-11-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+usethis::use_roxygen_md()
+```
+
+#Exercise 1: Making a function
+```{r}
+
+
+```
+
+
