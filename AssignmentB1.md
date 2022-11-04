@@ -189,6 +189,7 @@ Example3<- MeanandMedian(penguins$bill_length_mm)
 
 ``` r
 #Example4: Returning an error
+#Writing as comment since the Rmd file was not knitting with the error.
 #Example4<- MeanandMedian(penguins$island)
 ```
 
@@ -217,4 +218,4 @@ test_that("Return an error for vector of length 0 ", {
 expect_error (MeanandMedian(penguins$bill_length_mm, numeric(0)))})
 ```
 
-    ## Test passed 🥇
+    ## Test passed 🥳
