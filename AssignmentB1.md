@@ -70,8 +70,8 @@ MeanandMedian<- function(data) {
   if(!is.numeric(data)){
     stop("The following function cannot be executed as the input is not numeric")
   }
- mean<-mean(data,na.rm = T)
- median<- median(data,na.rm = T)
+ mean<-mean(data,na.rm = TRUE)
+ median<- median(data,na.rm = TRUE)
  print(c(mean,median))
 }
 
@@ -201,12 +201,20 @@ expect_equal(Example3, MeanandMedian(penguins$bill_length_mm)) })
 ```
 
     ## [1] 43.92193 44.45000
-    ## Test passed 😸
+    ## Test passed 😀
 
 ``` r
  #Using testthat() and expect_error() for an input other than numeric.
 test_that("Return an error for non-numeric data ", {
 expect_error (MeanandMedian(penguins$island))})
+```
+
+    ## Test passed 🎊
+
+``` r
+#Using testthat() and expect_error we check for vector of length 0.
+test_that("Return an error for vector of length 0 ", {
+expect_error (MeanandMedian(penguins$bill_length_mm, numeric(0)))})
 ```
 
     ## Test passed 🥇

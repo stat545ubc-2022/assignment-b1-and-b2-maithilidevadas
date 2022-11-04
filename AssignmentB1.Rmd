@@ -25,8 +25,8 @@ MeanandMedian<- function(data) {
   if(!is.numeric(data)){
     stop("The following function cannot be executed as the input is not numeric")
   }
- mean<-mean(data,na.rm = T)
- median<- median(data,na.rm = T)
+ mean<-mean(data,na.rm = TRUE)
+ median<- median(data,na.rm = TRUE)
  print(c(mean,median))
 }
 
@@ -52,7 +52,6 @@ vancouver_trees
 #Computing the mean and median of the variable 'diameter' using our function MeanandMedian
 Example1 <- MeanandMedian(vancouver_trees$diameter)
 ```
-
 **Example 2**
 ```{r}
 ##Second dataset 
@@ -91,9 +90,13 @@ expect_equal(Example3, MeanandMedian(penguins$bill_length_mm)) })
 test_that("Return an error for non-numeric data ", {
 expect_error (MeanandMedian(penguins$island))})
 ```
-```{r}
 
+```{r}
+#Using testthat() and expect_error we check for vector of length 0.
+test_that("Return an error for vector of length 0 ", {
+expect_error (MeanandMedian(penguins$bill_length_mm, numeric(0)))})
 ```
+
 
 
 
