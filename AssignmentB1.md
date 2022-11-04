@@ -201,7 +201,7 @@ expect_equal(Example3, MeanandMedian(penguins$bill_length_mm)) })
 ```
 
     ## [1] 43.92193 44.45000
-    ## Test passed 🥳
+    ## Test passed 😸
 
 ``` r
  #Using testthat() and expect_error() for an input other than numeric.
@@ -209,4 +209,4 @@ test_that("Return an error for non-numeric data ", {
 expect_error (MeanandMedian(penguins$island))})
 ```
 
-    ## Test passed 🎊
+    ## Test passed 🥇
