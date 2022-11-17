@@ -1,12 +1,14 @@
 Package: package
-Title: What the Package Does (One Line, Title Case)
+Title: FINDING THE MEAN AND MEDIAN OF A VARIABLE/SET OF VALUES
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Maithili", "Devadas", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: The package can be used when understanding the summary statistics of a dataset. 
+The package will return the mean and median of a variable in a dataset if it is numeric. If the 
+input data is not numeric, it promptly returns an error stating that the data type is not numeric
+and hence, the mean and median of the variable cannot be found. 
+License: `use_mit_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
