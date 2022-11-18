@@ -2,7 +2,7 @@ Package: MeanandMedian
 Title: Mean and Median 
 Version: 0.1.0
 Authors@R: 
-    person("Maithili", "D", email= "maithili.d@ubc.ca", role = c("aut", "cre"))
+    person("Maithili", "D", email= "maithili.dev@ubc.ca", role = c("aut", "cre"))
 Description: The goal of this function is to calculate the mean and median of any numeric variable in a dataset. This function comes in handy when carrying out initial data exploration by calculating summary statistics to understand characteristics of the variables in the datasets. This function promptly returns an error when the input data is not in numeric form. This is useful since often times we get output even though the given input format is not appropriate.Make calculating the mean and median of a variable easier by using this package. This can alsobe used for a set of values provided to the user.
 License: MIT + file LICENSE
 Encoding: UTF-8
