@@ -31,7 +31,6 @@ MeanandMedian<- function(data) {
  median<- median(data,na.rm = TRUE)
  print(c(mean,median))
 }
-document()
 ```
 
 
@@ -39,5 +38,11 @@ document()
 
 
 . 
+
+
+
+
+
+
 
 

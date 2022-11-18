@@ -33,10 +33,6 @@ MeanandMedian<- function(data) {
  median<- median(data,na.rm = TRUE)
  print(c(mean,median))
 }
-document()
 ```
-
-    ## ℹ Updating package documentation
-    ## ℹ Loading package
 
 .
