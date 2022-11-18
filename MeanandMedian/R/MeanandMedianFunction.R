@@ -8,6 +8,8 @@ library(devtools)
 #' @return the print command that returns the value of mean and median for the chosen numeric #' variable or if the input is not numeric, it will return an error as defined.
 #' @examples
 #' MeanandMedian(c(12,54,23,78,33))
+#' @import palmerpenguins
+#' @import testthat
 
 #' To understand examples with a dataset, we can use the palmerpenguins. 
 #' #install.packages("palmerpenguins")
