@@ -4,7 +4,7 @@ library(devtools)
 
 #' Summary Statistics: Mean and Median
 #' The function created above returns the mean and median of a numeric variable to the user.
-#' @param data is the numeric vector input we will provide for the function to run on. If this input is not numeric, the function will produce an error.
+#' @param data is the **numeric vector** input we will provide for the function to run on. If this input is not numeric, the function will produce an error.
 #' @return the print command that returns the value of mean and median for the chosen numeric #' variable or if the input is not numeric, it will return an error as defined.
 #' @examples
 #' MeanandMedian(c(12,54,23,78,33))
