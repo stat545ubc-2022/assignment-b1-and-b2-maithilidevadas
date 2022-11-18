@@ -1,11 +1,42 @@
-**Assignment B1**
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-**Contents**
+# MeanandMedian
 
+<!-- badges: start -->
+<!-- badges: end -->
 
-This repository contains the files **AssignmentB1.md**, **AssignmentB1.rmd** and **README.md**
-In this file we have learnt to create a function and document it using **roxygen2()** syntax. 
-The function we have created is **MeanandMedian** which computes the mean and median of a **numeric variable** and returns an error for non-numeric input.
-We have further used our function to test its functionality across various datasets. The datasets include **penguins from the palmerpenguins package**, **vancouver_trees and apt_buildings from the datateachr package**.
-Finally, we have used code from the **testthat()** package to check and validate our function's correctness. 
+\#Description The goal of this function is to calculate the mean and
+median of any numeric variable in a dataset. This function comes in
+handy when carrying out initial data exploration by calculating summary
+statistics to understand characteristics of the variables in the
+datasets. This function promptly returns an error when the input data is
+not in numeric form. This is useful since often times we get output even
+though the given input format is not appropriate. Make calculating the
+mean and median of a variable easier by using this package..
+
+## Installation
+
+You can install the development version of MeanandMedian from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-maithilidevadas")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(MeanandMedian)
+MeanandMedian(c(12,54,23,78,33))
+#> [1] 40 33
+library(palmerpenguins) #loading example dataset 
+MeanandMedian(penguins$bill_length_mm)
+#> [1] 43.92193 44.45000
+#MeanandMedian(penguins$island)
+```
+
+\`\`\`

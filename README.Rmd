@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# MeanandMedian
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+#Description
+The goal of this function is to calculate the mean and median of any numeric variable in a dataset. This function comes in handy when carrying out initial data exploration by calculating summary statistics to understand characteristics of the variables in the datasets. This function promptly returns an error when the input data is not in numeric form. This is useful since often times we get output even though the given input format is not appropriate.
+Make calculating the mean and median of a variable easier by using this package..
+
+## Installation
+
+You can install the development version of MeanandMedian from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-maithilidevadas")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(MeanandMedian)
+MeanandMedian(c(12,54,23,78,33))
+library(palmerpenguins) #loading example dataset 
+MeanandMedian(penguins$bill_length_mm)
+#MeanandMedian(penguins$island)
+```
+```
